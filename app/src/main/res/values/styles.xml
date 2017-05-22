@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="backColor" format="color|reference"/>
+        <attr name="frontColor" format="color|reference"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="mode">
+            <enum name="STROKE" value="0" />
+            <enum name="STROKE_TEXT" value="1" />
+            <enum name="FILL" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

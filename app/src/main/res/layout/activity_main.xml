@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000">
+        <com.luminous.s_version1.RoundProgressBar
+            android:id="@+id/barStroke"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+
+            app:backColor="#000000"
+            app:frontColor="#ffffff"
+            app:mode="STROKE_TEXT"
+            app:textColor="@android:color/white"
+            app:textSize="222sp"
+            />
+        <Button
+            android:id="@+id/setmax"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="top|right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/settings"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        <FrameLayout
+            android:layout_marginTop="360dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemBackground="@android:color/black"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>
